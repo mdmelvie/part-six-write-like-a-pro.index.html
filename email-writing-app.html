@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 6 Writing Practice - Email Writing</title>
+    <meta name="theme-color" content="#4facfe">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Email Writing Practice">
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiRW1haWwgV3JpdGluZyBQcmFjdGljZSIsInNob3J0X25hbWUiOiJFbWFpbCBBcHAiLCJzdGFydF91cmwiOiIuLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmZmZmZmYiLCJ0aGVtZV9jb2xvciI6IiM0ZmFjZmUiLCJpY29ucyI6W3sic3JjIjoiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTVRJNElpQm9aV2xuYUhROUlqRXlPQ0lpSUhacFpYZENiM2c5SWpBZ01DQXhNamdnTVRJNElpQm1hV3hzUFNJak5HWmhZMlpsSWlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpUGp4eVpXTjBJSGRwWkhSb1BTSXhNamdpSUdobGFXZG9kRDBpTVRJNElpQm1hV3hzUFNJak5HWmhZMlpsSWk4K1BIUmxlSFFnZUQwaU5qUWlJSGs5SWpZMElpQm1hV3hzUFNJamRHaDBaU0lnWm05dWRDMXphWHBsUFNJME1DSWdabTl1ZEMxbVlXMXBiSGs5SWxObFoyOWxJRlZKSWlCbWIyNTBMWGRsYVdkb2REMGlOakF3SWlCMFpYaDBMV0Z1WTJodmNqMGliV2xrWkd4bElqNDhkSE53WVc0Z2VEMGlOalFpSUhrOUlqazJJajQ4TDNSbGVIUStQQzl6ZG1jKyIsInNpemVzIjoiMTI4eDEyOCIsInR5cGUiOiJpbWFnZS9zdmcreG1sIn1dfQ==">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .offline-indicator {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .question-box {
+            background: #f8f9ff;
+            border-left: 5px solid #4facfe;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .question-box h2 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .question-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+
+        .requirements {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .requirements h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .requirements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .requirements li {
+            padding: 8px 0;
+            color: #4a5568;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .requirements li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #48bb78;
+            font-weight: bold;
+        }
+
+        .email-form {
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 1em;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #4facfe;
+            box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+        }
+
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 200px;
+            line-height: 1.6;
+            transition: border-color 0.3s;
+        }
+
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #4facfe;
+            box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+        }
+
+        .word-counter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .word-count {
+            font-weight: 600;
+            font-size: 1em;
+        }
+
+        .word-count.good {
+            color: #48bb78;
+        }
+
+        .word-count.warning {
+            color: #ed8936;
+        }
+
+        .word-count.error {
+            color: #f56565;
+        }
+
+        .target-range {
+            font-size: 0.9em;
+            color: #718096;
+        }
+
+        .auto-save-indicator {
+            font-size: 0.8em;
+            color: #48bb78;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .auto-save-indicator.show {
+            opacity: 1;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(79, 172, 254, 0.3);
+        }
+
+        .btn-secondary {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+
+        .btn-secondary:hover {
+            background: #cbd5e0;
+            transform: translateY(-1px);
+        }
+
+        .preview {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .preview.show {
+            display: block;
+        }
+
+        .email-preview {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .email-header {
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .email-field {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .email-field strong {
+            color: #2d3748;
+            min-width: 60px;
+            display: inline-block;
+        }
+
+        .email-body {
+            white-space: pre-wrap;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .install-prompt {
+            background: #e6fffa;
+            border: 2px solid #38b2ac;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .install-prompt.show {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+
+            .offline-indicator {
+                position: static;
+                margin-top: 10px;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="offline-indicator" id="offlineIndicator">🌐 Online</div>
+            <h1>📧 Email Writing Practice</h1>
+            <p>Year 6 English - Part 6 Section</p>
+        </div>
+        
+        <div class="content">
+            <div class="install-prompt" id="installPrompt">
+                <h3 style="color: #2d3748; margin-bottom: 10px;">📱 Install This App</h3>
+                <p style="color: #4a5568; margin-bottom: 15px;">Add this app to your home screen for easy access anytime, even offline!</p>
+                <button class="btn btn-primary" onclick="installApp()">📲 Add to Home Screen</button>
+                <button class="btn btn-secondary" onclick="dismissInstallPrompt()" style="margin-left: 10px;">Maybe Later</button>
+            </div>
+
+            <div class="student-setup" id="studentSetup" style="display: none;">
+                <div class="question-box">
+                    <h2>👋 Welcome to Email Writing Practice!</h2>
+                    <div class="form-group">
+                        <label for="studentName">What's your name?</label>
+                        <input type="text" id="studentName" placeholder="Enter your name...">
+                    </div>
+                    <button class="btn btn-primary" onclick="startPractice()">🚀 Start Practice</button>
+                </div>
+            </div>
+
+            <div class="progress-section" id="progressSection" style="display: none;">
+                <div style="display: flex; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
+                    <div style="background: linear-gradient(135deg, #48bb78 0%, #38a169 100%); color: white; padding: 20px; border-radius: 15px; flex: 1; min-width: 200px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 1.1em;">📊 Your Progress</h3>
+                        <div style="font-size: 2em; font-weight: bold; margin: 5px 0;" id="completedCount">0</div>
+                        <div style="opacity: 0.9;">Emails Completed</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 20px; border-radius: 15px; flex: 1; min-width: 200px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 1.1em;">📝 Writing Stats</h3>
+                        <div style="font-size: 2em; font-weight: bold; margin: 5px 0;" id="averageWords">0</div>
+                        <div style="opacity: 0.9;">Average Words</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%); color: white; padding: 20px; border-radius: 15px; flex: 1; min-width: 200px;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 1.1em;">🎯 Current Task</h3>
+                        <div style="font-size: 1.2em; font-weight: bold; margin: 5px 0;" id="currentCategory">Getting Started</div>
+                        <div style="opacity: 0.9;">Question Type</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-box" id="questionBox">
+                <h2>📝 Writing Task</h2>
+                <div class="question-text" id="questionText">
+                    You want to invite your friend, Jane to join a beach clean-up at Marina Beach with you. Write an email to her.
+                </div>
+                
+                <div class="requirements">
+                    <h3>In your email, tell her:</h3>
+                    <ul id="requirementsList">
+                        <li>When the beach clean-up is</li>
+                        <li>Where to meet</li>
+                        <li>What to bring</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-weight: 600; color: #2d3748;">Write about 30-50 words</p>
+                </div>
+            </div>
+
+            <div class="email-form">
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <input type="email" id="to" value="jane@email.com" readonly>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" placeholder="Write a clear subject line...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Dear Jane,
+
+Write your email here...
+
+Best regards,
+[Your name]"></textarea>
+                    
+                    <div class="word-counter">
+                        <span class="word-count" id="wordCount">0 words</span>
+                        <span class="target-range">Target: 30-50 words</span>
+                        <span class="auto-save-indicator" id="autoSaveIndicator">💾 Saved</span>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="previewEmail()">📋 Preview Email</button>
+                    <button class="btn btn-primary" onclick="submitEmail()" id="submitBtn" style="display: none;">✅ Submit Email</button>
+                    <button class="btn btn-secondary" onclick="clearForm()">🗑️ Clear & Start Over</button>
+                    <button class="btn btn-secondary" onclick="newQuestion()">🔄 New Question</button>
+                    <button class="btn btn-secondary" onclick="toggleTeacherView()">👩‍🏫 Teacher View</button>
+                </div>
+            </div>
+            
+            <div class="preview" id="preview">
+                <h3 style="margin-bottom: 20px; color: #2d3748;">📧 Email Preview</h3>
+                <div class="email-preview">
+                    <div class="email-header">
+                        <div class="email-field"><strong>To:</strong> <span id="previewTo"></span></div>
+                        <div class="email-field"><strong>Subject:</strong> <span id="previewSubject"></span></div>
+                    </div>
+                    <div class="email-body" id="previewBody"></div>
+                </div>
+            </div>
+
+            <div class="teacher-dashboard" id="teacherDashboard" style="display: none;">
+                <div class="question-box">
+                    <h2>👩‍🏫 Teacher Dashboard</h2>
+                    <p style="margin-bottom: 20px; color: #4a5568;">View all student progress and submitted work</p>
+                    
+                    <div class="buttons" style="margin-bottom: 30px;">
+                        <button class="btn btn-secondary" onclick="exportStudentData()">📊 Export All Data</button>
+                        <button class="btn btn-secondary" onclick="clearAllData()">🗑️ Clear All Data</button>
+                        <button class="btn btn-secondary" onclick="toggleTeacherView()">👨‍🎓 Back to Student View</button>
+                    </div>
+                    
+                    <div id="studentDataDisplay">
+                        <div style="text-align: center; color: #718096; padding: 40px;">
+                            <p>📚 Student work will appear here as they complete emails</p>
+                            <p style="font-size: 0.9em; margin-top: 10px;">Data is stored locally in the browser</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const messageTextarea = document.getElementById('message');
+        const wordCountElement = document.getElementById('wordCount');
+        const subjectInput = document.getElementById('subject');
+        let deferredPrompt;
+        
+        // Sample questions for variety
+        const questionTemplates = {
+            events: [
+                { event: "beach clean-up at Marina Beach", friend: "Jane", email: "jane@email.com" },
+                { event: "school sports day", friend: "Sam", email: "sam@email.com" },
+                { event: "charity fun run in the park", friend: "Alex", email: "alex@email.com" },
+                { event: "school talent show", friend: "Maya", email: "maya@email.com" },
+                { event: "library reading club meeting", friend: "Tom", email: "tom@email.com" },
+                { event: "art exhibition at the community center", friend: "Emma", email: "emma@email.com" }
+            ],
+            parties: [
+                { type: "birthday party", friend: "Alex", email: "alex@email.com" },
+                { type: "end of term celebration", friend: "Sophie", email: "sophie@email.com" },
+                { type: "movie night", friend: "Jake", email: "jake@email.com" },
+                { type: "pizza party", friend: "Lily", email: "lily@email.com" }
+            ],
+            trips: [
+                { place: "science museum", friend: "Maya", email: "maya@email.com" },
+                { place: "zoo", friend: "Ben", email: "ben@email.com" },
+                { place: "historical castle", friend: "Grace", email: "grace@email.com" },
+                { place: "nature reserve", friend: "Oliver", email: "oliver@email.com" }
+            ],
+            activities: [
+                { activity: "cooking class", friend: "Zoe", email: "zoe@email.com" },
+                { activity: "drama workshop", friend: "Ryan", email: "ryan@email.com" },
+                { activity: "photography walk", friend: "Mia", email: "mia@email.com" },
+                { activity: "gardening project", friend: "Noah", email: "noah@email.com" }
+            ]
+        };
+
+        function generateRandomQuestion() {
+            const categories = Object.keys(questionTemplates);
+            const category = categories[Math.floor(Math.random() * categories.length)];
+            const templates = questionTemplates[category];
+            const template = templates[Math.floor(Math.random() * templates.length)];
+            
+            let question = {};
+            
+            switch(category) {
+                case 'events':
+                    question = {
+                        text: `You want to invite your friend, ${template.friend} to join a ${template.event} with you. Write an email to them.`,
+                        requirements: ["When the event is", "Where to meet", "What to bring"],
+                        recipient: template.email,
+                        category: 'Event Invitation'
+                    };
+                    break;
+                case 'parties':
+                    question = {
+                        text: `You are planning a ${template.type} and want to invite your friend ${template.friend}. Write an email invitation.`,
+                        requirements: ["When the party is", "Where it will be", "What they should bring or wear"],
+                        recipient: template.email,
+                        category: 'Party Invitation'
+                    };
+                    break;
+                case 'trips':
+                    question = {
+                        text: `Your class is going on a field trip to the ${template.place}. Write an email to your friend ${template.friend} with the details.`,
+                        requirements: ["When the trip is", "Meeting time and place", "What to bring for the trip"],
+                        recipient: template.email,
+                        category: 'Trip Information'
+                    };
+                    break;
+                case 'activities':
+                    question = {
+                        text: `You've signed up for a ${template.activity} and want to invite your friend ${template.friend} to join. Write an email to them.`,
+                        requirements: ["When the activity is", "Where it takes place", "What they need to prepare"],
+                        recipient: template.email,
+                        category: 'Activity Invitation'
+                    };
+                    break;
+            }
+            
+            return question;
+        }
+        
+        let currentQuestion = generateRandomQuestion();
+        let studentProgress = JSON.parse(localStorage.getItem('studentProgress')) || {
+            name: '',
+            questionsCompleted: 0,
+            totalWords: 0,
+            averageWords: 0,
+            completedEmails: [],
+            startDate: new Date().toISOString()
+        };
+
+        // Service Worker Registration for Offline Support
+        if ('serviceWorker' in navigator) {
+            const swCode = `
+                const CACHE_NAME = 'email-writing-app-v1';
+                const urlsToCache = ['/'];
+                
+                self.addEventListener('install', event => {
+                    event.waitUntil(
+                        caches.open(CACHE_NAME)
+                            .then(cache => cache.addAll(urlsToCache))
+                    );
+                });
+                
+                self.addEventListener('fetch', event => {
+                    event.respondWith(
+                        caches.match(event.request)
+                            .then(response => response || fetch(event.request))
+                    );
+                });
+            `;
+            
+            const blob = new Blob([swCode], { type: 'application/javascript' });
+            const swUrl = URL.createObjectURL(blob);
+            
+            navigator.serviceWorker.register(swUrl)
+                .then(() => console.log('App ready for offline use!'))
+                .catch(() => console.log('Offline features not available'));
+        }
+
+        // PWA Install Prompt
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('installPrompt').classList.add('show');
+        });
+
+        function installApp() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('App installed');
+                    }
+                    deferredPrompt = null;
+                    document.getElementById('installPrompt').classList.remove('show');
+                });
+            }
+        }
+
+        function dismissInstallPrompt() {
+            document.getElementById('installPrompt').classList.remove('show');
+            localStorage.setItem('installPromptDismissed', 'true');
+        }
+
+        // Auto-save functionality
+        function autoSave() {
+            if (studentProgress.name) {
+                const currentWork = {
+                    subject: subjectInput.value,
+                    message: messageTextarea.value,
+                    timestamp: new Date().toISOString()
+                };
+                localStorage.setItem('currentWork', JSON.stringify(currentWork));
+                
+                // Show save indicator
+                const indicator = document.getElementById('autoSaveIndicator');
+                indicator.classList.add('show');
+                setTimeout(() => indicator.classList.remove('show'), 2000);
+            }
+        }
+
+        // Load saved work
+        function loadSavedWork() {
+            const savedWork = JSON.parse(localStorage.getItem('currentWork'));
+            if (savedWork && studentProgress.name) {
+                subjectInput.value = savedWork.subject || '';
+                messageTextarea.value = savedWork.message || '';
+                updateWordCount();
+            }
+        }
+
+        function countWords(text) {
+            return text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
+        }
+
+        function updateWordCount() {
+            const text = messageTextarea.value;
+            const wordCount = countWords(text);
+            
+            wordCountElement.textContent = `${wordCount} words`;
+            
+            // Color coding based on target range
+            if (wordCount >= 30 && wordCount <= 50) {
+                wordCountElement.className = 'word-count good';
+            } else if (wordCount >= 25 && wordCount <= 60) {
+                wordCountElement.className = 'word-count warning';
+            } else {
+                wordCountElement.className = 'word-count error';
+            }
+        }
+
+        function previewEmail() {
+            const to = document.getElementById('to').value;
+            const subject = subjectInput.value || '(No subject)';
+            const message = messageTextarea.value || '(No message)';
+            
+            document.getElementById('previewTo').textContent = to;
+            document.getElementById('previewSubject').textContent = subject;
+            document.getElementById('previewBody').textContent = message;
+            
+            const preview = document.getElementById('preview');
+            preview.classList.add('show');
+            preview.scrollIntoView({ behavior: 'smooth' });
+            
+            // Show submit button if student has entered content
+            if (subject.trim() && message.trim()) {
+                document.getElementById('submitBtn').style.display = 'inline-block';
+            }
+        }
+
+        function clearForm() {
+            subjectInput.value = '';
+            messageTextarea.value = '';
+            document.getElementById('preview').classList.remove('show');
+            document.getElementById('submitBtn').style.display = 'none';
+            localStorage.removeItem('currentWork');
+            updateWordCount();
+            subjectInput.focus();
+        }
+
+        function startPractice() {
+            const name = document.getElementById('studentName').value.trim();
+            if (!name) {
+                alert('Please enter your name to start!');
+                return;
+            }
+            
+            studentProgress.name = name;
+            saveProgress();
+            
+            document.getElementById('studentSetup').style.display = 'none';
+            document.getElementById('progressSection').style.display = 'block';
+            document.getElementById('questionBox').style.display = 'block';
+            document.querySelector('.email-form').style.display = 'block';
+            
+            updateProgressDisplay();
+            loadNewQuestion();
+            subjectInput.focus();
+        }
+
+        function loadNewQuestion() {
+            currentQuestion = generateRandomQuestion();
+            
+            // Update question text
+            document.getElementById('questionText').textContent = currentQuestion.text;
+            
+            // Update requirements
+            const requirementsList = document.getElementById('requirementsList');
+            requirementsList.innerHTML = '';
+            currentQuestion.requirements.forEach(req => {
+                const li = document.createElement('li');
+                li.textContent = req;
+                requirementsList.appendChild(li);
+            });
+            
+            // Update recipient
+            document.getElementById('to').value = currentQuestion.recipient;
+            
+            // Update current category display
+            document.getElementById('currentCategory').textContent = currentQuestion.category;
+        }
+
+        function newQuestion() {
+            loadNewQuestion();
+            clearForm();
+        }
+
+        function submitEmail() {
+            const subject = subjectInput.value.trim();
+            const message = messageTextarea.value.trim();
+            const wordCount = countWords(message);
+            
+            if (!subject || !message) {
+                alert('Please complete both subject and message before submitting!');
+                return;
+            }
+            
+            // Save completed email
+            const completedEmail = {
+                id: Date.now(),
+                timestamp: new Date().toISOString(),
+                question: currentQuestion,
+                subject: subject,
+                message: message,
+                wordCount: wordCount,
+                inTargetRange: wordCount >= 30 && wordCount <= 50
+            };
+            
+            studentProgress.completedEmails.push(completedEmail);
+            studentProgress.questionsCompleted++;
+            studentProgress.totalWords += wordCount;
+            studentProgress.averageWords = Math.round(studentProgress.totalWords / studentProgress.questionsCompleted);
+            
+            saveProgress();
+            updateProgressDisplay();
+            
+            // Show success message
+            alert(`Great job! Email submitted successfully!\n\nWord count: ${wordCount}\nTarget range: 30-50 words`);
+            
+            // Load new question
+            loadNewQuestion();
+            clearForm();
+        }
+
+        function updateProgressDisplay() {
+            document.getElementById('completedCount').textContent = studentProgress.questionsCompleted;
+            document.getElementById('averageWords').textContent = studentProgress.averageWords;
+        }
+
+        function saveProgress() {
+            localStorage.setItem('studentProgress', JSON.stringify(studentProgress));
+            
+            // Also save to a global list for teacher view
+            let allStudents = JSON.parse(localStorage.getItem('allStudentData')) || [];
+            const existingIndex = allStudents.findIndex(s => s.name === studentProgress.name);
+            
+            if (existingIndex >= 0) {
+                allStudents[existingIndex] = { ...studentProgress };
+            } else {
+                allStudents.push({ ...studentProgress });
+            }
+            
+            localStorage.setItem('allStudentData', JSON.stringify(allStudents));
+        }
+
+        function toggleTeacherView() {
+            const teacherDashboard = document.getElementById('teacherDashboard');
+            const studentSections = [
+                document.getElementById('progressSection'),
+                document.getElementById('questionBox'),
+                document.querySelector('.email-form'),
+                document.getElementById('preview')
+            ];
+            
+            if (teacherDashboard.style.display === 'none') {
+                // Show teacher view
+                teacherDashboard.style.display = 'block';
+                studentSections.forEach(section => {
+                    if (section) section.style.display = 'none';
+                });
+                displayAllStudentData();
+            } else {
+                // Show student view
+                teacherDashboard.style.display = 'none';
+                if (studentProgress.name) {
+                    studentSections.forEach(section => {
+                        if (section) section.style.display = 'block';
+                    });
+                }
+            }
+        }
+
+        function displayAllStudentData() {
+            const allStudents = JSON.parse(localStorage.getItem('allStudentData')) || [];
+            const display = document.getElementById('studentDataDisplay');
+            
+            if (allStudents.length === 0) {
+                display.innerHTML = `
+                    <div style="text-align: center; color: #718096; padding: 40px;">
+                        <p>📚 No student data available yet</p>
+                        <p style="font-size: 0.9em; margin-top: 10px;">Students need to complete emails first</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = '<div style="display: grid; gap: 20px;">';
+            
+            allStudents.forEach(student => {
+                html += `
+                    <div style="background: #f7fafc; border: 2px solid #e2e8f0; border-radius: 15px; padding: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <h3 style="color: #2d3748; margin: 0;">👨‍🎓 ${student.name}</h3>
+                            <div style="display: flex; gap: 15px; font-size: 0.9em; color: #4a5568;">
+                                <span>📊 ${student.questionsCompleted} completed</span>
+                                <span>📝 ${student.averageWords} avg words</span>
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; gap: 15px;">
+                `;
+                
+                student.completedEmails.slice(-3).forEach(email => {
+                    const statusColor = email.inTargetRange ? '#48bb78' : '#ed8936';
+                    const statusText = email.inTargetRange ? 'Target Met' : 'Outside Target';
+                    
+                    html += `
+                        <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid ${statusColor};">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <strong style="color: #2d3748;">${email.subject}</strong>
+                                <span style="color: ${statusColor}; font-size: 0.9em; font-weight: 600;">${email.wordCount} words - ${statusText}</span>
+                            </div>
+                            <div style="color: #4a5568; font-size: 0.9em; margin-bottom: 10px;">
+                                ${email.question.category} • ${new Date(email.timestamp).toLocaleDateString()}
+                            </div>
+                            <div style="color: #4a5568; line-height: 1.5; max-height: 100px; overflow: hidden;">
+                                ${email.message.substring(0, 200)}${email.message.length > 200 ? '...' : ''}
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                html += '</div></div>';
+            });
+            
+            html += '</div>';
+            display.innerHTML = html;
+        }
+
+        function exportStudentData() {
+            const allStudents = JSON.parse(localStorage.getItem('allStudentData')) || [];
+            
+            if (allStudents.length === 0) {
+                alert('No student data to export!');
+                return;
+            }
+            
+            let csvContent = "Student Name,Questions Completed,Average Words,Total Words,Email Subject,Email Content,Word Count,Target Met,Date Submitted,Question Type\n";
+            
+            allStudents.forEach(student => {
+                student.completedEmails.forEach(email => {
+                    const row = [
+                        student.name,
+                        student.questionsCompleted,
+                        student.averageWords,
+                        student.totalWords,
+                        `"${email.subject.replace(/"/g, '""')}"`,
+                        `"${email.message.replace(/"/g, '""')}"`,
+                        email.wordCount,
+                        email.inTargetRange ? 'Yes' : 'No',
+                        new Date(email.timestamp).toLocaleDateString(),
+                        email.question.category
+                    ].join(',');
+                    csvContent += row + "\n";
+                });
+            });
+            
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `student_email_data_${new Date().toISOString().split('T')[0]}.csv`;
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+
+        function clearAllData() {
+            if (confirm('Are you sure you want to clear ALL student data? This cannot be undone!')) {
+                localStorage.removeItem('allStudentData');
+                localStorage.removeItem('studentProgress');
+                displayAllStudentData();
+                alert('All data has been cleared!');
+            }
+        }
+
+        // Online/Offline Status
+        function updateOnlineStatus() {
+            const indicator = document.getElementById('offlineIndicator');
+            if (navigator.onLine) {
+                indicator.textContent = '🌐 Online';
+                indicator.style.background = 'rgba(72, 187, 120, 0.2)';
+            } else {
+                indicator.textContent = '📱 Offline Mode';
+                indicator.style.background = 'rgba(237, 137, 54, 0.2)';
+            }
+        }
+
+        // Event listeners
+        messageTextarea.addEventListener('input', () => {
+            updateWordCount();
+            autoSave();
+        });
+        
+        subjectInput.addEventListener('input', autoSave);
+        
+        window.addEventListener('online', updateOnlineStatus);
+        window.addEventListener('offline', updateOnlineStatus);
+
+        // Initialize
+        updateWordCount();
+        updateOnlineStatus();
+        
+        // Check if install prompt was dismissed
+        if (localStorage.getItem('installPromptDismissed')) {
+            document.getElementById('installPrompt').classList.remove('show');
+        }
+        
+        // Check if student already exists
+        window.addEventListener('load', () => {
+            if (studentProgress.name) {
+                document.getElementById('progressSection').style.display = 'block';
+                document.getElementById('questionBox').style.display = 'block';
+                document.querySelector('.email-form').style.display = 'block';
+                updateProgressDisplay();
+                loadNewQuestion();
+                loadSavedWork(); // Load any saved work
+                subjectInput.focus();
+            } else {
+                document.getElementById('studentSetup').style.display = 'block';
+                document.getElementById('studentName').focus();
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97fd8a0c42731dcd',t:'MTc1Nzk5NjA5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
